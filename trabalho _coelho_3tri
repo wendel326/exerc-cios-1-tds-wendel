@@ -12,7 +12,7 @@ int main()
 	scanf ("%d", &geracao_escolhida);
 
 	for( int geracao =1; geracao <= geracao_escolhida; geracao++ ) {
-		printf("geracao: %d total: %d\n", geracao_escolhida, total_de_coelho);
+		printf("geracao: %d total: %d\n", geracao, total_de_coelho);
 		coelho = coelho * 2;
 		total_de_coelho = coelho + coelho -1;
 	}
