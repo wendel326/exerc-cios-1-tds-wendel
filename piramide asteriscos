@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int x, w, j;
+
+    printf("Digite o numero de linhas para a piramide: ");
+    scanf("%d", &x);
+
+    for (w = 1; w <= x; w++) {
+        
+        for (j = 1; j <= x - w; j++) {
+            printf(" ");
+        }
+        for (j = 1; j <= (2 * w - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
